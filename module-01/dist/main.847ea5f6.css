@@ -1,2 +1,18 @@
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container-1 .darken-4 {
+  background-color: #bb160c;
+}
 
 /*# sourceMappingURL=/main.847ea5f6.css.map */
