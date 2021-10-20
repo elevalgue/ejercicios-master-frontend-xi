@@ -15,7 +15,107 @@ h2 {
 .box {
   width: 60px;
   height: 60px;
-  border: 1px solid red;
+  border-radius: 5px;
+}
+
+div {
+  background-color: aqua;
+}
+
+.darken-1 {
+  background-color: #ff0040;
+}
+
+.darken-2 {
+  background-color: #cc0033;
+}
+
+.darken-3 {
+  background-color: #990026;
+}
+
+.darken-4 {
+  background-color: #66001a;
+}
+
+.lighten-1 {
+  background-color: #ff668c;
+}
+
+.lighten-2 {
+  background-color: #ff99b3;
+}
+
+.lighten-3 {
+  background-color: #ffccd9;
+}
+
+.lighten-4 {
+  background-color: white;
+}
+
+.darken-1 {
+  background-color: #249b90;
+}
+
+.darken-2 {
+  background-color: #1b7169;
+}
+
+.darken-3 {
+  background-color: #114843;
+}
+
+.darken-4 {
+  background-color: #071f1d;
+}
+
+.lighten-1 {
+  background-color: #4fd6c9;
+}
+
+.lighten-2 {
+  background-color: #79dfd6;
+}
+
+.lighten-3 {
+  background-color: #a2e9e2;
+}
+
+.lighten-4 {
+  background-color: #cbf3ef;
+}
+
+.darken-1 {
+  background-color: #0b89d5;
+}
+
+.darken-2 {
+  background-color: #096aa4;
+}
+
+.darken-3 {
+  background-color: #064b74;
+}
+
+.darken-4 {
+  background-color: #042c43;
+}
+
+.lighten-1 {
+  background-color: #50b8f6;
+}
+
+.lighten-2 {
+  background-color: #81cbf8;
+}
+
+.lighten-3 {
+  background-color: #b1dffb;
+}
+
+.lighten-4 {
+  background-color: #e2f3fd;
 }
 
 /*# sourceMappingURL=/main.847ea5f6.css.map */

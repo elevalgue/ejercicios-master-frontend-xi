@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 h2 {
   text-align: center;
 }
@@ -15,5 +17,46 @@ h2 {
 .box {
   width: 60px;
   height: 60px;
-  border: 1px solid red;
+  // border: 1px solid red;
+  border-radius: 5px;
+}
+
+div {
+  background-color: aqua;
+}
+
+@for $i from 1 through 4 {
+  .darken-#{$i} {
+    background-color: darken($base-color1, 10% * $i);
+  }
+}
+
+@for $i from 1 through 4 {
+  .lighten-#{$i} {
+    background-color: lighten($base-color1, 10% * $i);
+  }
+}
+
+@for $i from 1 through 4 {
+  .darken-#{$i} {
+    background-color: darken($base-color2, 10% * $i);
+  }
+}
+
+@for $i from 1 through 4 {
+  .lighten-#{$i} {
+    background-color: lighten($base-color2, 10% * $i);
+  }
+}
+
+@for $i from 1 through 4 {
+  .darken-#{$i} {
+    background-color: darken($base-color3, 10% * $i);
+  }
+}
+
+@for $i from 1 through 4 {
+  .lighten-#{$i} {
+    background-color: lighten($base-color3, 10% * $i);
+  }
 }
