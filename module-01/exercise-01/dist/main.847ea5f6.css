@@ -8,7 +8,14 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   justify-content: center;
+  border: 1px solid black;
   gap: 5px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=/main.847ea5f6.css.map */
