@@ -1,1 +1,0 @@
-{"version":3,"sources":["src/styles/main.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"main.d96059c3.css","sourceRoot":"..","sourcesContent":["header {\n  background-color: khaki;\n}\n\nmain {\n  background-color: indianred;\n  color: skyblue;\n}\n"]}
