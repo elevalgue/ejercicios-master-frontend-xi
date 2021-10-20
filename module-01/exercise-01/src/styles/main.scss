@@ -9,15 +9,20 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: center;
-  border: 1px solid black;
   gap: 5px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .box {
   width: 60px;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
 }
 
 .container-1 {
@@ -27,6 +32,7 @@ h2 {
   @for $i from 1 through 4 {
     .darken-#{$i} {
       background-color: darken($base-color1, 10% * $i);
+      color: white;
     }
   }
 
@@ -44,6 +50,7 @@ h2 {
   @for $i from 1 through 4 {
     .darken-#{$i} {
       background-color: darken($base-color2, 10% * $i);
+      color: white;
     }
   }
 
@@ -61,6 +68,7 @@ h2 {
   @for $i from 1 through 4 {
     .darken-#{$i} {
       background-color: darken($base-color3, 10% * $i);
+      color: white;
     }
   }
 

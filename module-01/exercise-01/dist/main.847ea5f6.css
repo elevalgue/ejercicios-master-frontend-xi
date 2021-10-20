@@ -7,15 +7,20 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: center;
-  border: 1px solid black;
   gap: 5px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .box {
   width: 60px;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
 }
 
 .container-1 .base-color {
@@ -23,15 +28,19 @@ h2 {
 }
 .container-1 .darken-1 {
   background-color: #ff0040;
+  color: white;
 }
 .container-1 .darken-2 {
   background-color: #cc0033;
+  color: white;
 }
 .container-1 .darken-3 {
   background-color: #990026;
+  color: white;
 }
 .container-1 .darken-4 {
   background-color: #66001a;
+  color: white;
 }
 .container-1 .lighten-1 {
   background-color: #ff668c;
@@ -51,15 +60,19 @@ h2 {
 }
 .container-2 .darken-1 {
   background-color: #249b90;
+  color: white;
 }
 .container-2 .darken-2 {
   background-color: #1b7169;
+  color: white;
 }
 .container-2 .darken-3 {
   background-color: #114843;
+  color: white;
 }
 .container-2 .darken-4 {
   background-color: #071f1d;
+  color: white;
 }
 .container-2 .lighten-1 {
   background-color: #4fd6c9;
@@ -79,15 +92,19 @@ h2 {
 }
 .container-3 .darken-1 {
   background-color: #0b89d5;
+  color: white;
 }
 .container-3 .darken-2 {
   background-color: #096aa4;
+  color: white;
 }
 .container-3 .darken-3 {
   background-color: #064b74;
+  color: white;
 }
 .container-3 .darken-4 {
   background-color: #042c43;
+  color: white;
 }
 .container-3 .lighten-1 {
   background-color: #50b8f6;
