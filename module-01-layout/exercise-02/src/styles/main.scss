@@ -1,5 +1,5 @@
-@import 'themeA.scss';
-// @import 'themeB.scss';
+// @import 'themeA.scss';
+@import 'themeB.scss';
 
 * {
   margin: 0;
@@ -24,7 +24,8 @@ h2 {
 }
 
 .box {
-  border: 1px solid red;
+  border: 1px solid #888888;
+  border-radius: $radious;
   width: 115px;
   height: 75px;
   padding-left: 5px;
