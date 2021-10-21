@@ -10,16 +10,45 @@
 h2 {
   text-align: center;
   font-family: $font-main;
+  margin-top: 2rem;
 }
 
 .container {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  border: 1px solid blue;
 }
 
-div {
-  background-color: red;
+.box {
+  border: 1px solid red;
+  width: 115px;
+  height: 115px;
+  padding-left: 5px;
+  color: $font-color;
+
+  &-base {
+    background-color: $color-primary;
+  }
+
+  &-important {
+    background-color: $color-secondary;
+  }
+
+  &-warning {
+    background-color: $color-tertiary;
+  }
+
+  &-font {
+    background-color: $color-light;
+    color: $font-color-dark;
+  }
+
+  &-shadow {
+    background-color: $color-light;
+    color: $font-color-dark;
+  }
 }
