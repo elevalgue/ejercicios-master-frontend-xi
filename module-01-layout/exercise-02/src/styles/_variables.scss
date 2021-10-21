@@ -1,8 +1,11 @@
-$base-color1: #ff3366;
-$base-color2: #2ec4b6;
-$base-color3: #20a4f3;
+// Colors
+$color-base: #ff3333;
+$color-important: #990026;
+$color-warning: ##ff99b3;
+$color-light: ##ffffff;
 
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&family=Roboto:wght@300;700&display=swap');
 
 $font-main: 'Comic Neue', cursive;
-$secondary-main: 'Roboto', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
