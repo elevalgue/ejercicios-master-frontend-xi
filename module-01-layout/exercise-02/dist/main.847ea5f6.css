@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&family=Roboto:wght@300;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&family=Roboto:wght@300;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -28,23 +27,24 @@ h2 {
   height: 115px;
   padding-left: 5px;
   color: #ffffff;
+  font-family: "Comic Neue", cursive;
 }
 .box-base {
-  background-color: #13c4a3;
+  background-color: #0000ff;
 }
 .box-important {
-  background-color: #36f1cd;
+  background-color: #4b7bf5;
 }
 .box-warning {
-  background-color: #39a0ed;
+  background-color: #79a9f5;
 }
 .box-font {
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: #c2e2f5;
+  color: black;
 }
 .box-shadow {
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: #c2e2f5;
+  color: black;
 }
 
 /*# sourceMappingURL=/main.847ea5f6.css.map */
