@@ -1,0 +1,87 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+h2 {
+  text-align: center;
+}
+
+div {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.container-1 {
+  // .base-color {
+  //   background-color: $base-color1;
+  // }
+  // @for $i from 1 through 4 {
+  //   .darken-#{$i} {
+  //     background-color: darken($base-color1, 10% * $i);
+  //     color: white;
+  //   }
+  // }
+  @include bg-color($base-color1);
+}
+
+// @for $i from 1 through 4 {
+//   .lighten-#{$i} {
+//     background-color: lighten($base-color1, 10% * $i);
+//   }
+// }
+// }
+
+// .container-2 {
+//   .base-color {
+//     background-color: $base-color2;
+//   }
+//   @for $i from 1 through 4 {
+//     .darken-#{$i} {
+//       background-color: darken($base-color2, 10% * $i);
+//       color: white;
+//     }
+//   }
+
+//   @for $i from 1 through 4 {
+//     .lighten-#{$i} {
+//       background-color: lighten($base-color2, 10% * $i);
+//     }
+//   }
+// }
+
+.container-3 {
+  .base-color {
+    background-color: $base-color3;
+  }
+  @for $i from 1 through 4 {
+    .darken-#{$i} {
+      background-color: darken($base-color3, 10% * $i);
+      color: white;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .lighten-#{$i} {
+      background-color: lighten($base-color3, 10% * $i);
+    }
+  }
+}
