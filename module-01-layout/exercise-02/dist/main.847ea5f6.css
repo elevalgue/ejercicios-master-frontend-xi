@@ -24,7 +24,7 @@ h2 {
 .box {
   border: 1px solid red;
   width: 115px;
-  height: 115px;
+  height: 75px;
   padding-left: 5px;
   color: #ffffff;
   font-family: "Comic Neue", cursive;
@@ -45,6 +45,8 @@ h2 {
 .box-shadow {
   background-color: #c2e2f5;
   color: black;
+  padding: 10px;
+  box-shadow: -5px 10px 5px #888888;
 }
 
 /*# sourceMappingURL=/main.847ea5f6.css.map */
