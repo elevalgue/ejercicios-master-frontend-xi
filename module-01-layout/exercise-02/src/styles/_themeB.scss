@@ -7,13 +7,13 @@ $font-color-light: #ffffff;
 $font-color-dark: black;
 
 // Fonts must be changed
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
 
-$font-main: 'Comic Neue', cursive;
-$font-secondary: 'Roboto', sans-serif;
+$font-main: 'Montserrat', sans-serif;
+$font-secondary: 'Space Mono', monospace;
 
 // Box-shadow
 $shadow: 5px 10px 5px #888888;
 
 // Border-radius
-$radious: 5px;
+$radius: 5px;
