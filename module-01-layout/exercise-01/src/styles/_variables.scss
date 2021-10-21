@@ -1,7 +1,8 @@
+// Colors
 $base-color1: #ff3366;
 $base-color2: #2ec4b6;
 $base-color3: #20a4f3;
 
-$base-color1-2: #db3a34;
-$base-color2-2: #177e89;
-$base-color3-2: #ffc857;
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+$font-main: 'Roboto', sans-serif;

@@ -1,2 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Comic Neue", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+div {
+  background-color: red;
+}
 
 /*# sourceMappingURL=/main.847ea5f6.css.map */
