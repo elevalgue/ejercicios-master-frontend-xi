@@ -20,7 +20,7 @@ nav {
   padding: 1em;
 }
 
-nav ul {
+.container .menu {
   list-style: none;
   background: #01949a;
   width: 100%;
@@ -28,7 +28,7 @@ nav ul {
   left: 0;
 }
 
-nav li:hover {
+.container .menu-item:hover {
   background: #004369;
   color: #ffffff;
 }

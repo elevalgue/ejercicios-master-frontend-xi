@@ -41,7 +41,7 @@ nav {
   padding: 1em;
 }
 
-nav ul {
+.container .menu {
   list-style: none;
   // padding: 0;
   // margin: 0;
@@ -52,7 +52,18 @@ nav ul {
   // top: 100%;
 }
 
-nav li:hover {
+// nav ul {
+//   list-style: none;
+//   // padding: 0;
+//   // margin: 0;
+//   background: $color-primary;
+//   width: 100%;
+//   position: absolute;
+//   left: 0;
+//   // top: 100%;
+// }
+
+.container .menu-item:hover {
   background: $color-secondary;
   color: $font-color-primary;
 }
