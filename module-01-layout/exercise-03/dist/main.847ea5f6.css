@@ -339,37 +339,37 @@ template {
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 ul,
 li {
   list-style-type: none;
-  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
-nav {
-  padding: 1em;
-}
-
-.container .menu {
-  list-style: none;
+nav .menu {
   background: #01949a;
-  width: 100%;
-  position: absolute;
-  left: 0;
 }
 @media (min-width: 1200px) {
-  .container .menu {
+  nav .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.container .menu .container .menu-item:hover {
-  background: #004369;
+nav .menu-item {
+  width: 100%;
+  text-align: center;
   color: #ffffff;
+  cursor: pointer;
+  padding: 1rem;
+}
+nav .menu nav .menu-item:hover {
+  background: #004369;
 }
 
 /*# sourceMappingURL=/main.847ea5f6.css.map */

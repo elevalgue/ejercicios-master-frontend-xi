@@ -3,35 +3,36 @@
 @import 'reset.scss';
 
 h2 {
-  text-align: center;
+  text-align: left;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 ul,
 li {
   list-style-type: none;
-  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
-nav {
-  padding: 1em;
-}
-
-// .container .menu {
-.container .menu {
-  list-style: none;
+nav .menu {
   background: $color-primary;
-  width: 100%;
-  position: absolute;
-  left: 0;
 
   @include for-desktop-up {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .container .menu-item:hover {
-    background: $color-secondary;
+
+  &-item {
+    width: 100%;
+    text-align: center;
     color: $font-color-primary;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  nav .menu-item:hover {
+    background: $color-secondary;
   }
 }
