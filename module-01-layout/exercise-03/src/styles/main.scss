@@ -17,6 +17,7 @@ nav {
   padding: 1em;
 }
 
+// .container .menu {
 .container .menu {
   list-style: none;
   background: $color-primary;
@@ -24,12 +25,11 @@ nav {
   position: absolute;
   left: 0;
 
-  // @include desktop {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  // }
-
+  @include for-desktop-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .container .menu-item:hover {
     background: $color-secondary;
     color: $font-color-primary;
