@@ -342,6 +342,8 @@ h2 {
   text-align: left;
   margin-top: 1rem;
   margin-left: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
 
 ul,
@@ -353,6 +355,7 @@ li {
 
 nav .menu {
   background: #01949a;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 1200px) {
   nav .menu {
@@ -362,7 +365,7 @@ nav .menu {
   }
 }
 nav .menu-item {
-  width: 100%;
+  width: 90%;
   text-align: center;
   color: #ffffff;
   cursor: pointer;

@@ -6,6 +6,8 @@ h2 {
   text-align: left;
   margin-top: 1rem;
   margin-left: 1rem;
+  font-family: $font-primary;
+  font-size: 18px;
 }
 
 ul,
@@ -17,6 +19,7 @@ li {
 
 nav .menu {
   background: $color-primary;
+  font-family: $font-primary;
 
   @include for-desktop-up {
     display: flex;
@@ -25,7 +28,7 @@ nav .menu {
   }
 
   &-item {
-    width: 100%;
+    width: 90%;
     text-align: center;
     color: $font-color-primary;
     cursor: pointer;
