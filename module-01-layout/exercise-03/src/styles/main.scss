@@ -1,6 +1,6 @@
+@import 'reset.scss';
 @import 'variables.scss';
 @import 'mixin.scss';
-@import 'reset.scss';
 
 h2 {
   text-align: left;
@@ -32,7 +32,7 @@ nav .menu {
     padding: 1rem;
   }
 
-  nav .menu-item:hover {
+  &-item:hover {
     background: $color-secondary;
   }
 }
