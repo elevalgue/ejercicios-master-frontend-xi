@@ -1,4 +1,4 @@
-# Front-end Master Exercises
+# Front-end Master Exercises 🍋
 
 ## Content
 ### Module 01: Layout
