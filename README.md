@@ -1,8 +1,8 @@
 # Front-end Master Exercises 🍋
 
 ## Content
-- Module 01: Layout
-- Module 02: Lenguage
+- __Module 01__: Layout
+- __Module 02__: Lenguage
 ##
 Made with ⭐ by @elevalgue
 
