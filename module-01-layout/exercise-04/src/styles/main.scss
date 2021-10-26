@@ -13,8 +13,10 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 100vh;
-  //   width: auto;
+  width: 100%;
   border: 1px solid red;
+  margin: 1rem;
+  //   background-color: rgb(231, 231, 231);
 }
 
 .card {
@@ -24,7 +26,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 2fr 0.5fr;
   grid-gap: 1rem;
-  //   background-color: rgb(231, 231, 231);
 
   &-image {
     border: 1px solid blue;
@@ -36,17 +37,26 @@ body {
     border: 1px solid blue;
     grid-column: 1;
     grid-row: 2;
+    justify-self: center;
   }
 
   &-date {
     border: 1px solid blue;
     grid-column: 1;
     grid-row: 3;
+    justify-self: end;
+
+    span:nth-child(2) {
+      color: rgb(90, 177, 2);
+    }
   }
 
   &-button {
     border: 1px solid blue;
     grid-column: 1;
     grid-row: 4;
+    background-color: rgb(90, 177, 2);
+    color: white;
+    justify-self: center;
   }
 }
