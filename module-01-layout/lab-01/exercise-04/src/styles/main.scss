@@ -4,6 +4,7 @@
 
 body {
   box-sizing: border-box;
+  font-family: $font-primary;
 }
 
 .wrapper {
@@ -13,7 +14,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 100vh;
-  width: 100%;
+  // width: 100%;
   border: 1px solid red;
   margin: 1rem;
   //   background-color: rgb(231, 231, 231);
@@ -21,7 +22,7 @@ body {
 
 .card {
   border: 1px solid rgb(0, 255, 0);
-  width: 350px;
+  width: 250px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 2fr 0.5fr;
@@ -47,7 +48,7 @@ body {
     justify-self: end;
 
     span:nth-child(2) {
-      color: rgb(90, 177, 2);
+      color: $color-main;
     }
   }
 
@@ -55,8 +56,14 @@ body {
     border: 1px solid blue;
     grid-column: 1;
     grid-row: 4;
-    background-color: rgb(90, 177, 2);
+    background-color: $color-main;
+    border-radius: 3px;
     color: white;
     justify-self: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-secondary;
+    }
   }
 }
