@@ -342,4 +342,43 @@ body {
   box-sizing: border-box;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+.card {
+  border: 1px solid lime;
+  width: 350px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr 0.5fr;
+  grid-gap: 1rem;
+}
+.card-image {
+  border: 1px solid blue;
+  grid-column: 1;
+  grid-row: 1;
+}
+.card-content {
+  border: 1px solid blue;
+  grid-column: 1;
+  grid-row: 2;
+}
+.card-date {
+  border: 1px solid blue;
+  grid-column: 1;
+  grid-row: 3;
+}
+.card-button {
+  border: 1px solid blue;
+  grid-column: 1;
+  grid-row: 4;
+}
+
 /*# sourceMappingURL=/main.847ea5f6.css.map */

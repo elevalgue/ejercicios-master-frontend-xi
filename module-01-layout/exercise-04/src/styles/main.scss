@@ -5,3 +5,54 @@
 body {
   box-sizing: border-box;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  //   width: auto;
+  border: 1px solid red;
+}
+
+.card {
+  border: 1px solid rgb(0, 255, 0);
+  width: 350px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr 0.5fr;
+  grid-gap: 1rem;
+  //   background-color: rgb(231, 231, 231);
+
+  &-image {
+    border: 1px solid blue;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &-content {
+    border: 1px solid blue;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  &-date {
+    border: 1px solid blue;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  &-button {
+    border: 1px solid blue;
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+
+// img {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
