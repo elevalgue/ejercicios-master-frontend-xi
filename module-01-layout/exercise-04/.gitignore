@@ -1,7 +1,7 @@
 # Dependency directories
-./../node_modules/
+node_modules/
 
 # Parcel related files
-./../dist/
-./../.cache/
+dist/
+.cache/
 
