@@ -1,6 +1,6 @@
 # Front-end Master Exercises 🍋
 
-__Content__
+## Content
 
 - __Module 01__: Layout
 - __Module 02__: Lenguage
