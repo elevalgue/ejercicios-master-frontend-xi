@@ -1,0 +1,8 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+
+body {
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
