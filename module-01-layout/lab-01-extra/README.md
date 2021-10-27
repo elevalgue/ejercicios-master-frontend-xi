@@ -1,6 +1,6 @@
 # Lab Extra Module 01 - Layout
 
-Vamos a crear un layout para una aplicación, que contendrá:
+**Vamos a crear un layout para una aplicación, que contendrá:**
 
 - Header:
 
@@ -18,3 +18,13 @@ Vamos a crear un layout para una aplicación, que contendrá:
 
 - Footer:
   - Texto de la compañía, al final de la página (aunque el contenido no ocupe todo el alto)
+
+**Consideraciones:**
+
+- No perder en ninguna resolución la barra de navegación al hacer scroll
+- En resoluciones pequeñas (hasta 768px de ancho):
+  - Contenido a ocultar:
+    - Barra superior con input de búsqueda y nombre de usuario
+    - Título del menú
+  - Cambiar menú a la parte superior, bajo el header
+  - Cambiar la organización del contenido principal para visualizarlo sin problemas
