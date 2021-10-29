@@ -1,4 +1,4 @@
-# Front-end Master Exercises 🍋
+# Front-end master exercises 🍋
 
 ## Content
 
