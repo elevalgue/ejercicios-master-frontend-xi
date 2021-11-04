@@ -1,6 +1,6 @@
 # Module 02: Language ⚙️
 
-**Content**
+**Content:**
 
 - Javascript ES5.
 - Javascript ES6 + main proposals ES7.
