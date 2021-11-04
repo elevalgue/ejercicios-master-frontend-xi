@@ -1,5 +1,5 @@
 # Module 01: Layout 🎀
-__Content__
+__Content:__
 
 - Basic concepts HTML5 + CSS 3/4
 - Responsive web design
