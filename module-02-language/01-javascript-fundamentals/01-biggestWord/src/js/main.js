@@ -1,5 +1,5 @@
 console.log("************** PRACTICE *********************");
-console.log("01 Biggest Word");
+console.log("01 - Biggest Word");
 
 function biggestWord(phrase) {
   const splitWords = phrase.split(' ');
