@@ -2,5 +2,5 @@
 
 **Content:**
 
-- Webpack.
-- Parcel.
+- Webpack
+- Parcel
