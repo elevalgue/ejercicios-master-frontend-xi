@@ -1,4 +1,4 @@
-# Module 02: Language ⚙️
+# Module 02: Languages 😝
 
 **Content:**
 
