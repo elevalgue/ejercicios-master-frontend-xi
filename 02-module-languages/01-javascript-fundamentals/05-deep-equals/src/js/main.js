@@ -39,10 +39,10 @@ else if ((typeof a == "object" && a != null) && (typeof b == "object" && b != nu
     if (objAkeys.length != objBkeys.length)
       return false;
 
-    for (let prop in a) {
-      if (b.hasOwnProperty(prop))
+    for (let objKey in a) {
+      if (b.hasOwnProperty(objKey))
       {  
-        if (!isEqual(a[prop], b[prop]))
+        if (!isEqual(a[objKey], b[objKey]))
           return false;
       }
       else
