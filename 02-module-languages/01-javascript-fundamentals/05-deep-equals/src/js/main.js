@@ -3,8 +3,21 @@ console.log("05 - Deep Equals");
 
 console.log("----- Apartado A ------");
 
-var user = { name: "María", age: 30 };
-var clonedUser = { name: "María", age: 30 };
+// var user = { name: "María", age: 30 };
+// var clonedUser = { name: "María", age: 30 };
+
+var user = {
+  name: "María",
+  age: 30,
+  address: { city: "Málaga", code: 29620 },
+  friends: ["Juan"],
+};
+var clonedUser = {
+  name: "María",
+  age: 30,
+  address: { city: "Málaga", code: 29620 },
+  friends: ["Juan"],
+};
 
 function isEqual(a, b) {
   // 1. We're setting the keys of each one of the objects
