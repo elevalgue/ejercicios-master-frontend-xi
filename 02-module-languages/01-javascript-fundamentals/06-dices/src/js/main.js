@@ -27,7 +27,10 @@ function renderDices() {
       reset();
     }
   }
-
 }
 
-renderDices();
+let roll = renderDices();
+roll.renderMessage();
+roll.renderMessage();
+roll.renderMessage();
+roll.renderMessage();
