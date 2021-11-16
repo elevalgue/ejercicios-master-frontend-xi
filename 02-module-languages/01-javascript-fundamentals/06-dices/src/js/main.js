@@ -9,18 +9,24 @@ function renderDices() {
   let diceB;
   console.log(diceA, diceB, 'hello world from render');
   
+  function rollDices(min, max) {
+    diceA = Math.random(min, max) * (6 - 1) + 1;
+    diceB = Math.random(min, max) * (6 - 1) + 1;
+  }
+
   function reset() {
     diceA = null; 
     diceB = null;
     console.log(diceA, diceB, 'hello world from reset');
   }
-  reset();
-
-  function rollDices(min, max) {
-    diceA = Math.random(min, max) * (6 - 1) + 1;
-    diceB = Math.random(min, max) * (6 - 1) + 1;
+  
+  return {
+    renderMessage: function () {
+      rollDices()
+      console.log(diceA, diceB, 'hello, its me');
+      reset();
+    }
   }
-  rollDices(); 
 
 }
 
