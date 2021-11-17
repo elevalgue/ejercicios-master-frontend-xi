@@ -19,7 +19,7 @@ function initializeDices() {
       return {
         renderMessage: function () {
           if (diceA === 6 && diceB === 6) {
-            console.log('🎉🎉 Enhorabuena! tenemos ganador🎉🎉 🏆');
+            console.log('🎉🎉  Enhorabuena! tenemos ganador 🎉🎉 🏆');
           } else {
             console.log(`El primer dado es ${diceA} y el segndo ${diceB}`);
           }
