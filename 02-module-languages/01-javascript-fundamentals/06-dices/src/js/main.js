@@ -11,12 +11,12 @@ function renderDices() {
     console.log(diceA, diceB, 'los dados deberían ser null');
   }
   
-  function rollDices(min, max) {
-    diceA = Math.random(min, max) * (6 - 1) + 1;
-    diceB = Math.random(min, max) * (6 - 1) + 1;
+  function rollDices(max, min) {
+    diceA = Math.floor(Math.random(max, min) * (6 - 1) + 1);
+    diceB = Math.floor(Math.random(max, min) * (6 - 1) + 1);
     console.log('Cruza los dedos y tira los dados 🎲');
     console.log(diceA);
-    reset();
+    // reset();
   }
   console.log(diceA, 'hello');
   
@@ -26,9 +26,12 @@ function renderDices() {
       rollDices()
       if (diceA === 6 && diceB === 6) {
         console.log('🎉🎉 Enhorabuena! tenemos ganador🎉🎉 🏆');
+      } else {
+        console.log(`El primer dado es ${diceA} y el segndo ${diceB}`);
       }
     }
   }
+
 }
 
 let roll = renderDices();
