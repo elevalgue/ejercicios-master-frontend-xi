@@ -12,12 +12,6 @@ function initializeDices() {
       console.log(diceA, diceB, 'los dados deberían ser null');
     },
     
-    // function reset() {
-    //   diceA = null; 
-    //   diceB = null;
-    //   console.log(diceA, diceB, 'los dados deberían ser null');
-    // }
-    
     rollDices(max, min) {
       diceA = Math.floor(Math.random(max, min) * (6 - 1) + 1);
       diceB = Math.floor(Math.random(max, min) * (6 - 1) + 1);
@@ -35,6 +29,8 @@ function initializeDices() {
       }
     }
   }
+
+  return renderDices; 
 }
   
 //   let roll = rollDices();
