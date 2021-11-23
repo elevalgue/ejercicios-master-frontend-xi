@@ -12,5 +12,10 @@
   "devDependencies": {
     "webpack": "^5.64.2",
     "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4"
   }
 }
