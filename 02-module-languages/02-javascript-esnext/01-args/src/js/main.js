@@ -2,7 +2,6 @@ console.log('************** PRACTICE *********************');
 console.log('01 - Args');
 
 console.log("----- Apartado A ------");
-
 function f(a, { b } = {}, c = 100) {
   console.log(arguments.length);
   console.log(a, a === arguments[0]);
