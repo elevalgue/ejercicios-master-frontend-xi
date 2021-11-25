@@ -16,7 +16,7 @@ function f(a, { b } = {}, c = 100) {
 ¿Qué muestra por consola esta llamada?
 
 ```javascript
-f("JS rocks!", { b: "b" });
+f('JS rocks!', { b: 'b' });
 ```
 
 ## Apartado B
@@ -24,7 +24,7 @@ f("JS rocks!", { b: "b" });
 ¿Y con estos argumentos?
 
 ```javascript
-f({ b: "b" });
+f({ b: 'b' });
 ```
 
 ## Apartado C
@@ -32,15 +32,5 @@ f({ b: "b" });
 ¿Y ahora?
 
 ```javascript
-f("JS sucks!", null, 13);
+f('JS sucks!', null, 13);
 ```
-
-# About Basefactor + Lemoncode
-
-We are an innovating team of Javascript experts, passionate about turning your ideas into robust products.
-
-[Basefactor, consultancy by Lemoncode](http://www.basefactor.com) provides consultancy and coaching services.
-
-[Lemoncode](http://lemoncode.net/services/en/#en-home) provides training services.
-
-For the LATAM/Spanish audience we are running an Online Front End Master degree, more info: http://lemoncode.net/master-frontend
