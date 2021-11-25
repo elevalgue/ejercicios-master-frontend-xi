@@ -1,6 +1,6 @@
 # Fibonacci
 
-Implementa una función para calcular el n-enésimo termino de la sucesión de Fibonacci. Esta sucesión tiene sus dos primeros términos prefijados:
+Implementa una función para calcular el n-enésimo término de la sucesión de Fibonacci. Esta sucesión tiene sus dos primeros términos prefijados:
 
 ```
 fib(0) = 0
