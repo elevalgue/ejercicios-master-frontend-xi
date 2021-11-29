@@ -16,6 +16,10 @@ module.exports = {
       template: "./src/index.html",
       filename: "index.html",
       scriptLoading: "blocking",
+      hash: true, 
     }),
   ],
+  devServer: {
+    port: "8081",
+  }
 };
