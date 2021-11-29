@@ -1,4 +1,4 @@
-# Module 0: Bundling
+# Module 03: Bundling
 
 ## Básico
 
