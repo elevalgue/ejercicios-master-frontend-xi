@@ -1,4 +1,3 @@
-
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -7,7 +6,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    bundle: "./src/students.js",
+    app: "./src/students.js",
   },
   output: {
     filename: "[name].[chunkhash].js",
