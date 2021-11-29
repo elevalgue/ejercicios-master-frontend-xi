@@ -1,5 +1,7 @@
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const path = require("path");
 
@@ -22,7 +24,7 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
@@ -32,9 +34,11 @@ module.exports = {
       filename: "index.html",
       scriptLoading: "blocking",
     }),
+    new MiniCssExtractPlugin(),
     new CleanWebpackPlugin(),
   ],
   devServer: {
     port: "8081",
+    hot: true, 
   },
 };
