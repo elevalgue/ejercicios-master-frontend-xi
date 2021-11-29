@@ -7,8 +7,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    app: "./src/students.js",
-    appStyles: "./src/mystyles.css",
+    bundle: "./src/students.js",
   },
   output: {
     filename: "[name].[chunkhash].js",
@@ -34,11 +33,14 @@ module.exports = {
       filename: "index.html",
       scriptLoading: "blocking",
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].[chunkhash].css",
+      chunkFilename: "[id].css",
+    }),
     new CleanWebpackPlugin(),
   ],
   devServer: {
     port: "8081",
-    hot: true, 
+    hot: true,
   },
 };
