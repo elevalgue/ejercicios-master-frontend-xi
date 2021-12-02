@@ -12,6 +12,7 @@ node_modules
 # Webpack related files
 dist
 .cache
+package-lock.json
 
 # vscode
 .vscode
