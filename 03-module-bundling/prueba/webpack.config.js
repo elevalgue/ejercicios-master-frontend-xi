@@ -7,7 +7,7 @@ const path = require("path");
 module.exports = {
   entry: {
     app: "./src/students.js",
-    vendorStyles: ['./node_modules/bootstrap/dist/css/bootstrap.css']
+    vendorStyles: ["./node_modules/bootstrap/dist/css/bootstrap.css"],
   },
   output: {
     filename: "[name].[chunkhash].js",
@@ -22,8 +22,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
