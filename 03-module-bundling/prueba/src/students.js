@@ -1,5 +1,5 @@
 import * as utils from "./averageService";
-import "./mystyles.css";
+import "./mystyles.scss";
 
 const scores = [90, 75, 60, 99, 94, 30];
 const averageScore = getAvg(scores);

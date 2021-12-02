@@ -7,7 +7,6 @@ const path = require("path");
 module.exports = {
   entry: {
     app: "./src/students.js",
-    vendorStyles: ["./node_modules/bootstrap/dist/css/bootstrap.css"],
   },
   output: {
     filename: "[name].[chunkhash].js",
@@ -19,6 +18,11 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader",
+      },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.css$/,
