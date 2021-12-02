@@ -5,9 +5,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
 module.exports = {
-  context: path.resolve(__dirname, "src"), 
+  context: path.resolve(__dirname, "src"),
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
   entry: {
-    app: "./index.js",
+    app: "./index.jsx",
   },
   output: {
     filename: "[name].[chunkhash].js",
@@ -16,7 +19,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: "babel-loader",
       },
@@ -27,7 +30,6 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
         use: ["style-loader", "css-loader"],
       },
       {
@@ -43,13 +45,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html",
+      template: "index.html",
       filename: "index.html",
       scriptLoading: "blocking",
     }),
     new MiniCssExtractPlugin({
       filename: "[name].[chunkhash].css",
-      chunkFilename: "[id].css",
     }),
     new CleanWebpackPlugin(),
   ],
