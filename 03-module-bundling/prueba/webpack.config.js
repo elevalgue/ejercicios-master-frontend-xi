@@ -37,15 +37,6 @@ module.exports = {
           "sass-loader",
         ],
       },
-          {
-        test: /\.(png|jpg)$/,
-        type: "asset/resource",
-      },
-      // {
-      //   test: /\.html$/,
-      //   exclude: /node_modules/,
-      //   loader: "html-loader",
-      // },
     ],
   },
   plugins: [
