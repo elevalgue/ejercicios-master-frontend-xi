@@ -1,5 +1,6 @@
 import React from "react";
 import { getAvg } from "./averageService";
+import "./averageComponentStyles.scss";
 
 export const AverageComponent = () => {
   const [average, setAverage] = React.useState(0);
