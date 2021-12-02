@@ -1,6 +1,6 @@
 import * as utils from "./averageService";
 import "./mystyles.scss";
-import animalImg from "./content/quokka.jpeg"; 
+import animalImg from "./content/quokka.jpg"; 
 
 const scores = [90, 75, 60, 99, 94, 30];
 const averageScore = getAvg(scores);
