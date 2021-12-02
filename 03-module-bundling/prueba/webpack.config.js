@@ -7,6 +7,7 @@ const path = require("path");
 module.exports = {
   entry: {
     app: "./src/students.js",
+    vendorStyles: ['./node_modules/bootstrap/dist/css/bootstrap.css']
   },
   output: {
     filename: "[name].[chunkhash].js",
