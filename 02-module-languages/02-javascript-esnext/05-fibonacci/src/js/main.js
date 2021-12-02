@@ -2,14 +2,18 @@ console.log('************** PRACTICE *********************');
 console.log('05 - Fibonacci');
 
 let firstValue = 0; 
-let secondValue= 1; 
+let secondValue = 1; 
 let count = 0;
 
 const fib = (n) => {
-while ( number <= n ) {
-  [firstValue, secondValue] = [firstValue + secondValue, number];
+while ( secondValue <= n ) {
+  [firstValue, secondValue] = [firstValue + secondValue, firstValue];
+
+  if (firstValue % 2 !== 0) {
+    count += firstValue; 
+  }
 }
-  return number
+  return count
 }
 
-console.log(fib(5));
+console.log(fib(4));
