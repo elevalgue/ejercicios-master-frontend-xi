@@ -7,7 +7,7 @@ let count = 0;
 
 const fib = (n) => {
 while ( secondValue <= n ) {
-  [firstValue, secondValue] = [firstValue + secondValue, firstValue];
+  [secondValue, firstValue] = [secondValue + firstValue, secondValue];
 
   if (firstValue % 2 !== 0) {
     count += firstValue; 
@@ -16,4 +16,4 @@ while ( secondValue <= n ) {
   return count
 }
 
-console.log(fib(4));
+console.log(fib(8));
