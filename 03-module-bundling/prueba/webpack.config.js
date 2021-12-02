@@ -5,8 +5,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
 module.exports = {
+  context: path.resolve(__dirname, "src"), 
   entry: {
-    app: "./src/students.js",
+    app: "./students.js",
   },
   output: {
     filename: "[name].[chunkhash].js",
@@ -22,7 +23,7 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.css$/,
@@ -33,7 +34,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: "./index.html",
       filename: "index.html",
       scriptLoading: "blocking",
     }),
