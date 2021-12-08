@@ -13,8 +13,8 @@ module.exports = {
   },
   entry: {
     app: "./index.tsx",
-    appStyles: ["./mystyles.scss"],
-    vendorStyles: ["../node_modules/bootstrap/dist/css/bootstrap.css"],
+    // appStyles: ["./mystyles.scss"],
+    // vendorStyles: ["../node_modules/bootstrap/dist/css/bootstrap.css"],
   },
   output: {
     filename: "[name].[chunkhash].js",
