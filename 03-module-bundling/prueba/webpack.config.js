@@ -7,7 +7,7 @@ const path = require("path");
 module.exports = {
   context: path.resolve(__dirname, "src"),
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".js", "ts", ".tsx"],
   },
   entry: {
     app: "./index.jsx",
