@@ -12,7 +12,7 @@ export const TotalScoreComponent = () => {
 
   return (
     <div>
-      <span className={classes["result-background"]}>
+      <span className={classes.resultBackground}>
         Students total score: {totalScore}
       </span>
     </div>
