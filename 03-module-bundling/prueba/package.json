@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode development",
+    "type:check": "ts --noEmit", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "elevalgue",
