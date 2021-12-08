@@ -8,8 +8,8 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { AverageComponent } from "./averageComponent";
-import { TotalScoreComponent } from "./totalScoreComponent";
+import { AverageComponent } from "./components/averageComponent";
+import { TotalScoreComponent } from "./components/totalScoreComponent";
 
 ReactDOM.render(
   <div>
@@ -19,3 +19,4 @@ ReactDOM.render(
   </div>,
   document.getElementById("root")
 );
+

@@ -1,5 +1,5 @@
 import React from "react";
-import { getTotalScore } from "./averageService";
+import { getTotalScore } from "../averageService";
 import classes from "./totalScoreComponentStyles.scss";
 
 export const TotalScoreComponent = () => {

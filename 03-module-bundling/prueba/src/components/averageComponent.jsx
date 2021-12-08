@@ -1,5 +1,5 @@
 import React from "react";
-import { getAvg } from "./averageService";
+import { getAvg } from "../averageService";
 import classes from "./averageComponentStyles.scss";
 
 export const AverageComponent = () => {
