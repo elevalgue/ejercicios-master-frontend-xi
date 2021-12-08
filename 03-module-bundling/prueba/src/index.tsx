@@ -13,7 +13,7 @@ import { AverageComponent } from "./components/averageComponent";
 ReactDOM.render(
   <div>
     <h1>Hello from React DOM</h1>
-    <AverageComponent />
+    <AverageComponent />   
   </div>,
   document.getElementById("root")
 );
