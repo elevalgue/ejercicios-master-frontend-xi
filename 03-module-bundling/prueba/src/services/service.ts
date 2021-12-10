@@ -1,6 +1,4 @@
-const baseURl = process.env.API_BASE_URL;
-console.log(process.env.API_BASE_URL, 'prueba');
-
+const baseURL = process.env.API_BASE_URL;
 
 // export function getAvg(scores: number[]) {
 //   return getTotalScore(scores) / scores.length;

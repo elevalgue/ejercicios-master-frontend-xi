@@ -10,7 +10,7 @@ export const HelloWorld: React.FC = () => {
       <h1>
         Hello World!
       </h1>
-      <img src={starCatcher}/>
+      <img className={classes.image} src={starCatcher}/>
     </div>
   );
 };

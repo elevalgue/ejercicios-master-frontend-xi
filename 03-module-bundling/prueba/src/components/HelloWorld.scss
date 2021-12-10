@@ -1,5 +1,17 @@
-$background: teal;
+$background: #efefef;
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background;
+}
 
 .result-background {
-  background-color: $background;
+  background-color: #a239ca;
+}
+
+.image {
+  border-radius: 50%;
 }
