@@ -8,12 +8,12 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { AverageComponent } from "./components/averageComponent";
+import { HelloWorldComponent} from "./components/HelloWorldComponent";
 
 ReactDOM.render(
   <div>
     <h1>Hello from React DOM</h1>
-    <AverageComponent />   
+    <HelloWorldComponent />   
   </div>,
   document.getElementById("root")
 );

@@ -13,7 +13,7 @@
     "type-check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "elevalgue",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
