@@ -1,9 +1,9 @@
 import React from "react";
-// import { getAvg } from "../averageService";
+// import { getAvg } from "../services/service";
 import starCatcher from "../content/star-catcher.jpg"; 
-import classes from "./HelloWorldStyles.scss"; 
+import classes from "./HelloWorld.scss"; 
 
-export const HelloWorldComponent: React.FC = () => {
+export const HelloWorld: React.FC = () => {
 
   return (
     <div className={classes.resultBackground}>
