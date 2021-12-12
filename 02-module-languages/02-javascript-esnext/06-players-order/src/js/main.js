@@ -2,8 +2,13 @@ console.log('************** PRACTICE *********************');
 console.log('06 - Players Order');
 
 const getPlayersOrder = (players, turns) => {
-  /* Implementation here */
-};
+  let position = [...players];
+  for (let i = 0; i < turns; i++) {
+    let [firstPlayer, ...restPlayers] = position;
+    position = [...restPlayers, firstPlayer]; 
+  }
+  return position; 
+}; 
 
 // Un ejemplo:
 const newOrderIn2Turns = getPlayersOrder(['Ana', 'Juan', 'Pablo', 'Lucia'], 2);
