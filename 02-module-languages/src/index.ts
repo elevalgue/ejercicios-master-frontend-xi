@@ -1,5 +1,4 @@
-import "./01 deliverables/exercise-01.js";
-
+// JS fundamentals
 import "./01-javascript-fundamentals/01-biggest-word/main"; 
 import "./01-javascript-fundamentals/02-califications/main"; 
 import "./01-javascript-fundamentals/03-check-arguments"; 
@@ -16,3 +15,14 @@ import "./01-javascript-fundamentals/13-this/main";
 import "./01-javascript-fundamentals/14-values/main";
 import "./01-javascript-fundamentals/15-zip/main";
 import "./01-javascript-fundamentals/16-zzcrypt/main";
+
+// JS ESNext
+import "./02-javascript-esnext/01-args/main";
+import "./02-javascript-esnext/02-array-operations/main";
+import "./02-javascript-esnext/03-concat/main";
+import "./02-javascript-esnext/04-console/main";
+import "./02-javascript-esnext/05-fibonacci/main";
+import "./02-javascript-esnext/06-players-order/main";
+import "./02-javascript-esnext/07-reminder/main";
+import "./02-javascript-esnext/08-slot-machine/main";
+import "./02-javascript-esnext/09-swap/main";
