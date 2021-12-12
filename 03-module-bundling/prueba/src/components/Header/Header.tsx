@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "./Header.scss"
+import classes from "../../styles/Header.scss"
+
 
 export const Header: React.FC = ()  => {
 
