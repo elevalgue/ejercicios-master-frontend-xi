@@ -1,18 +1,11 @@
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Dependency directories
 node_modules
-
-# Webpack related files
-dist
-.cache
+.DS_Store
+yarn.lock
 package-lock.json
-
-# vscode
-.vscode
+*.log
+*.orig
+*/src/**/*.js.map
+.idea/
+desktop.ini
+build/
+transpiled/
