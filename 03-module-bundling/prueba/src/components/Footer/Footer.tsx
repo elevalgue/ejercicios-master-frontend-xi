@@ -4,8 +4,8 @@ import classes from "../../styles/Footer.scss"
 export const Footer: React.FC = () => {
 
   return (
-    <div className={classes.footerWrapper}>
-      <div>
+    <footer className={classes.footer}>
+      <div className={classes.footerWrapper}>
       <p>&copy;2021</p>
       <p>Made with ⭐</p>
       </div>
@@ -17,6 +17,6 @@ export const Footer: React.FC = () => {
         </ul>
       </div>
 
-      </div>
+      </footer>
   );
 };

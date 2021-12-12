@@ -7,6 +7,7 @@ export const App: React.FC = () => {
 
   return (
     <div>
+      
       <div className={classes.imgContainer}>
         <img className={classes.image} src={starCatcher}/>
         </div>
