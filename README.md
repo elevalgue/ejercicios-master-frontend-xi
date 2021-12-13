@@ -6,8 +6,6 @@
 - __Module 02__: Lenguage
 - __Module 03__: Bundling
 - __Module 04__: Frameworks
-  - 01: React
-
 
 ##
 
