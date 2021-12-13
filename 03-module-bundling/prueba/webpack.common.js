@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
-// const basePath = __dirname;
+const basePath = __dirname;
 
 module.exports = {
   context: path.join(basePath, "src"),
@@ -10,7 +10,8 @@ module.exports = {
   },
   entry: {
     app: "./index.tsx",
-    appStyles: ["./mystyles.scss"],
+    appStyles: ["./styles/index.scss"],
+    // appStyles: ["./mystyles.scss"],
   },
   output: {
     path: path.resolve(process.cwd(), "dist"),
