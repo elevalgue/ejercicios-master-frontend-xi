@@ -1,19 +1,19 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
 const path = require("path");
+// const basePath = __dirname;
 
 module.exports = {
-  context: path.resolve(__dirname, "src"),
+  context: path.join(basePath, "src"),
   resolve: {
     extensions: [".js", ".ts", ".tsx"],
   },
   entry: {
     app: "./index.tsx",
+    appStyles: ["./mystyles.scss"],
   },
   output: {
-    filename: "[name].[chunkhash].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(process.cwd(), "dist"),
   },
   module: {
     rules: [
@@ -22,7 +22,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
       },
-        {
+      {
         test: /\.(png|jpg)$/,
         type: "asset/resource",
       },
@@ -30,10 +30,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: "index.html", 
       template: "index.html",
-      filename: "index.html",
-      scriptLoading: "blocking",
+      scriptLoading:"blocking",
     }),
-    new CleanWebpackPlugin(),
   ],
 };

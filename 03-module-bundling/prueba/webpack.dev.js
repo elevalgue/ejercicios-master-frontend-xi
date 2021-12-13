@@ -1,22 +1,24 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 const Dotenv = require("dotenv-webpack");
 
 module.exports = merge(common, {
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [
-          MiniCssExtractPlugin.loader,
+          "style-loader",
           {
             loader: "css-loader",
             options: {
               modules: {
                 exportLocalsConvention: "camelCase",
+                localIdentName: "[path][name]__[local]--[hash:base64:5]",
+                localIdentContext: path.resolve(__dirname, "src/components"),
               },
             },
           },
@@ -25,25 +27,14 @@ module.exports = merge(common, {
       },
     ],
   },
+  devtool: "eval-source-map",
+  devServer: {
+    port: 8081,
+  },
+  stats: "errors-only",
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].[chunkhash].css",
-    }),
     new Dotenv({
-      path: "./prod.env",
+      path: "./dev.env",
     }),
   ],
-  optimization: {
-    runtimeChunk: "single",
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          chunks: "all",
-          name: "vendor",
-          test: /[\\/]node_modules[\\/]/,
-          enforce: true,
-        },
-      },
-    },
-  },
 });
