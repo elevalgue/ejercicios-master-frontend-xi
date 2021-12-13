@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
     <footer className={classes.footer}>
       <div className={classes.footerWrapper}>
       <p>&copy;2021</p>
-      <p>Made with ⭐</p>
+      <p>Made with ⭐ by elevalgue</p>
       </div>
 
       <div>
