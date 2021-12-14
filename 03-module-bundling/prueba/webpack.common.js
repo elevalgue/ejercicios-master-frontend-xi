@@ -11,7 +11,6 @@ module.exports = {
   entry: {
     app: "./index.tsx",
     appStyles: ["./styles/index.scss"],
-    // appStyles: ["./mystyles.scss"],
   },
   output: {
     path: path.resolve(process.cwd(), "dist"),

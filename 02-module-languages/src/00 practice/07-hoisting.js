@@ -13,7 +13,7 @@ function f() {
   console.log(a);
 }
 
-f();
+// f();
 console.log("-----------------------");
 
 console.log("----- Apartado B ------");
@@ -32,10 +32,10 @@ console.log(c);
 console.log("-----------------------");
 
 console.log("----- Apartado B ------");
-f();
+f2();
 var a = 1;
 
-function f() {
+function f2() {
   console.log(a);
   b = 4;
   var c = 3;

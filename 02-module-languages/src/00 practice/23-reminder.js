@@ -12,3 +12,6 @@ class Reminder {
     }, delay * 1000);
   }
 }
+
+const myReminder = new Reminder('comprar pan');
+myReminder.remindMe(); 
