@@ -14,4 +14,4 @@ class Reminder {
 }
 
 const myReminder = new Reminder('comprar pan');
-myReminder.remindMe(); 
+myReminder.remindMe();
