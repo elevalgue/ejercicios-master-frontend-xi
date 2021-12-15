@@ -21,7 +21,8 @@
 // import "./00 practice/20-console.js";
 // import "./00 practice/21-fibonacci.js";
 // import "./00 practice/22-players-order.js";
-import "./00 practice/23-reminder.js";
+// import "./00 practice/23-reminder.js";
+import "./00 practice/25-swap.js"; 
 
 // 01 deriverables
 // import "./01 deliverables/exercise-01.js"; 
