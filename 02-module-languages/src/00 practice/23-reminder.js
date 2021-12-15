@@ -7,11 +7,11 @@ class Reminder {
   }
 
   remindMe(delay) {
-    setTimeout(function () {
+    setTimeout(() => {
       console.log(`Your reminder after ${delay} seconds is: ${this.text}`);
     }, delay * 1000);
   }
 }
 
 const myReminder = new Reminder('comprar pan');
-myReminder.remindMe();
+myReminder.remindMe(3);
