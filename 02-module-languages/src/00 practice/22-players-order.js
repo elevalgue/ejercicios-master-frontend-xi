@@ -11,5 +11,5 @@ const getPlayersOrder = (players, turns) => {
 }; 
 
 // Un ejemplo:
-const newOrderIn2Turns = getPlayersOrder(['Ana', 'Juan', 'Pablo', 'Lucia'], 2);
+const newOrderIn2Turns = getPlayersOrder(['Ana', 'Juan', 'Pablo', 'Lucia'], 4);
 console.log(newOrderIn2Turns); // ["Pablo", "Lucia", "Ana", "Juan"]
