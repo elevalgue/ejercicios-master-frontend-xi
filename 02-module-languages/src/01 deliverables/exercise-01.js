@@ -1,35 +1,40 @@
 console.log("************** DELIVERABLE 01 *********************");
 
-console.log('/*------ 1. Head ------*/')
-const letters = ["a", "b", "c", "d", "e"]; 
+// Data
+const weekdays = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
+console.log('/*------ 1. Head ------*/')
 const head = (array) => {
-  const [first, ...rest] = letters;
+  const [first, ...rest] = array;
   return first; 
 };
 
 const head2 = ([first, ...rest]) => first;
 
-console.log(head(letters));
-console.log(head2(letters));
+console.log(head(weekdays));
+console.log(head2(weekdays));
 console.log("/*---------------------*/");
 
 
 console.log('/*------ 2. Tail ------*/')
 const tail = (array) => {
-  const [ , ...rest] = letters;
+  const [ , ...rest] = array;
   return rest; 
 }
 
 const tail2 = ([, ...rest]) => rest;
 
-console.log(tail(letters));
-console.log(tail2(letters));
+console.log(tail(weekdays));
+console.log(tail2(weekdays));
 console.log("/*---------------------*/");
 
-
 console.log('/*------ 3. Init ------*/')
-const init = (array) => letters.slice(0, letters.length - 1);
+const init = (array) => array.slice(0, array.length - 1);
 
-console.log(init(letters));
+console.log(init(weekdays));
+console.log("/*---------------------*/");
+
+console.log('/*------ 4. Last ------*/')
+const last = (array) => array.pop(0, array.length - 1); 
+console.log(last(weekdays));
 console.log("/*---------------------*/");
