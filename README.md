@@ -17,20 +17,8 @@
   <body>
     <h2>Paleta de colores dinámica</h2>
     <div class="container container-1">
-      <div class="box darken-4">
-        <span class="color-box-text">Darken 4</span>
-      </div>
-      <div class="box darken-3">
-        <span class="color-box-text">Darken 3</span>
-      </div>
-      <div class="box darken-2">
-        <span class="color-box-text">Darken 2</span>
-      </div>
       <div class="box darken-1">
         <span class="color-box-text">Darken 1</span>
-      </div>
-      <div class="box base-color">
-        <span class="color-box-text">Base color</span>
       </div>
     </div>
   </body>
@@ -58,8 +46,6 @@ console.log(values({ David: 8.25, Maria: 9.5, Jose: 6.75, Juan: 5.5, Blanca: 7.7
 "build:prod": "webpack --config webpack.prod.js",
 "build:dev": "webpack --config webpack.dev.js",
 "build:perf": "npm run type-check && webpack --config webpack.perf.js",
-"type-check": "tsc --noEmit",
-"test": "echo \"Error: no test specified\" && exit 1"
 },
 ```
 
