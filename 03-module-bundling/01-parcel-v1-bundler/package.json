@@ -13,6 +13,7 @@
   "author": "elevalgue",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "bundler": "^0.8.0",
     "parcel": "^2.0.1"
   },
