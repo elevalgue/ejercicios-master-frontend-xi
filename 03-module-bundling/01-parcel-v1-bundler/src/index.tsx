@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Hello } from "hello";
+import { Hello } from "./hello";
 
 // import "./mystyles.scss";
 // import quokkaImg from "./content/quokka.jpg";
@@ -15,4 +15,4 @@ import { Hello } from "hello";
 
 // document.getElementById('imgContainer').appendChild(img); 
 
-ReactDOM.render(<Hello/>, document.getElementById("root")); 
+ReactDOM.render(<Hello/ >, document.getElementById("root")); 
