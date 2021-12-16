@@ -1,1 +1,0 @@
-{"mappings":"AAEA;EACE,kBAHW","sources":["src/mystyles.scss"],"sourcesContent":["$background: teal;\n\n.red-background {\n  background-color: $background;\n}\n"],"names":[],"version":3,"file":"index.9318126e.css.map","sourceRoot":"/__parcel_source_root/"}
