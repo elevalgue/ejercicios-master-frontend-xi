@@ -2,7 +2,7 @@
 
 ## Content
 
-#### Module 01: Layout
+#### Module 01: Layout 💅
 
 ```
 <!DOCTYPE html>
@@ -12,10 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/main.scss" />
-    <title>Lab Module Layout</title>
+    <title>Layout</title>
   </head>
   <body>
-    <h2>Ejercicio 01: Crear una paleta de colores dinámica</h2>
+    <h2>Paleta de colores dinámica</h2>
     <div class="container container-1">
       <div class="box darken-4">
         <span class="color-box-text">Darken 4</span>
@@ -37,7 +37,7 @@
 </html>
 ```
 
-#### Module 02: Lenguage
+#### Module 02: Lenguage ⚙️
 
 ```
 function values({...eso2o}) {
@@ -45,12 +45,11 @@ function values({...eso2o}) {
 }
 
 console.log(values({ David: 8.25, Maria: 9.5, Jose: 6.75, Juan: 5.5, Blanca: 7.75, Carmen: 8, }));
-´´´
-
-#### Module 03: Bundling
-
 ```
 
+#### Module 03: Bundling 🍱
+
+```
 "scripts": {
 "start": "run-p -l type-check start:dev",
 "build": "run-p -l type-check build:prod",
@@ -62,7 +61,7 @@ console.log(values({ David: 8.25, Maria: 9.5, Jose: 6.75, Juan: 5.5, Blanca: 7.7
 "type-check": "tsc --noEmit",
 "test": "echo \"Error: no test specified\" && exit 1"
 },
-´´´
+```
 
 #### Module 04: Frameworks
 
