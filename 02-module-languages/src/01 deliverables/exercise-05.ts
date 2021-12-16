@@ -16,15 +16,17 @@ class SlothMachine {
     let message: string;
     const game: boolean[] = [this.randomBoolean(), this.randomBoolean(), this.randomBoolean()]; 
     if (game) {
+      message = `Congratulations!!!. You won ${this.coins} coins coins!!`; 
       console.log(`Congratulations!!!. You won ${this.coins} coins coins!!`);
       this.coins = 0;
     } else {
-      console.log(`Good luck next time!!`);
+      message = `Good luck next time!!`; 
     }
+    console.log(message);
   }
 }
 
-const game = new SlothMachine();
+const machine1 = new SlothMachine();
 machine1.play(); // "Good luck next time!!"
 machine1.play(); // "Good luck next time!!"
 machine1.play(); // "Congratulations!!!. You won 3 coins!!"

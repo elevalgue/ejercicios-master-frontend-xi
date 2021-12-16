@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
   padding: 2rem;
   color: white;
-  background: linear-gradient(-25deg, blue, #4ec1b7);
+  background: linear-gradient(-25deg, #136a8a, #4ec1b7);
   font-family: 'Open Sans';
 }
 

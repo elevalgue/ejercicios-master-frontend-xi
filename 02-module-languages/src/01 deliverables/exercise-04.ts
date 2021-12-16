@@ -5,13 +5,13 @@ interface Book {
   isRead: boolean; 
 }
 
-const books: Array<Book> = [
+const books: Book[] = [
   { title: "Harry Potter y la piedra filosofal", isRead: true },
   { title: "Canción de hielo y fuego", isRead: false },
   { title: "Devastación", isRead: true },
 ];
 
-function isBookRead( books: Array<Book>, titleToSearch: string): boolean {
+function isBookRead( books:  Book[], titleToSearch: string): boolean {
   const book = books.find(book => book.title === titleToSearch);
     return book ? book.isRead : false;
 }
