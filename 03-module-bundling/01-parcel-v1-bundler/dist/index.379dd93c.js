@@ -459,11 +459,11 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"hD4hw":[function(require,module,exports) {
-var _mystylesCss = require("./mystyles.css");
+var _mystylesScss = require("./mystyles.scss");
 const userName = "Maricarmen";
 const message = `Hello ${userName}`;
 console.log(message);
 
-},{"./mystyles.css":"5Mv5r"}],"5Mv5r":[function() {},{}]},["lBB98","hD4hw"], "hD4hw", "parcelRequire5bcb")
+},{"./mystyles.scss":"gwNhu"}],"gwNhu":[function() {},{}]},["lBB98","hD4hw"], "hD4hw", "parcelRequire5bcb")
 
 //# sourceMappingURL=index.379dd93c.js.map

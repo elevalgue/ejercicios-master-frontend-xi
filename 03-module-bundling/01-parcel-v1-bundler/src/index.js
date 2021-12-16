@@ -1,4 +1,4 @@
-import "./mystyles.css"; 
+import "./mystyles.scss"; 
 
 const userName = "Maricarmen";
 const message = `Hello ${userName}`;

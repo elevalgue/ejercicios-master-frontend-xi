@@ -11,7 +11,7 @@ node_modules
 
 # Webpack related files
 dist
-.cache
+.parcel-cache
 package-lock.json
 
 # vscode
