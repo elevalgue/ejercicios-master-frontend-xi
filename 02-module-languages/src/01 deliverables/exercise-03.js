@@ -1,4 +1,4 @@
-console.log("%c************** DELIVERABLE 03 *********************", 'color: #8a136a');
+console.log("%c************** DELIVERABLE 03 *********************", 'color: green');
 
 // Data: 
 const product = {
@@ -7,15 +7,16 @@ const product = {
   price: 1.99,
 };
 
-console.log('/*------ 1. Clone ------*/')
+console.log('%c/*------ 1. Clone ------*/', 'color: blue'); 
 function clone(source) {
   return { ...source }; 
 }
 
 console.log(clone(product));
-console.log("/*---------------------*/");
+console.log("%c/*---------------------*/", "color: blue");
 
-console.log('/*------ 2. Merge ------*/')
+
+console.log('%c/*------ 2. Merge ------*/', 'color: blue'); 
 const a = { name: "Maria", surname: "Ibañez", country: "SPA" };
 const b = { name: "Luisa", age: 31, married: true };
 
@@ -24,4 +25,5 @@ function merge(source, target) {
 }
 
 console.log(merge(a, b));
-console.log("/*---------------------*/");
+console.log("%c/*---------------------*/", "color: blue");
+

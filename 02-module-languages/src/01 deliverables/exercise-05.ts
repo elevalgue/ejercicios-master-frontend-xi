@@ -1,4 +1,4 @@
-console.log("%c************** DELIVERABLE 05 *********************", "color: #8a136a");
+console.log("%c************** DELIVERABLE 05 *********************", "color: green");
 
 class SlothMachine {
   coins: number;
@@ -14,15 +14,10 @@ class SlothMachine {
   play() {
     this.coins++;
     let message: string;
-    // const game: boolean[] = [this.randomBoolean(), this.randomBoolean(), this.randomBoolean()]; 
-    const [machine1, machine2, machine3] = [
-      randomBoolean(),
-      randomBoolean(),
-      randomBoolean()
-    ];
-    if (machine1 && machine2 && machine3) {
-      console.log(`Congratulations!!!. You won ${this.count} coins coins!!`);
-      this.count = 0;
+    const game: boolean[] = [this.randomBoolean(), this.randomBoolean(), this.randomBoolean()]; 
+    if (game) {
+      console.log(`Congratulations!!!. You won ${this.coins} coins coins!!`);
+      this.coins = 0;
     } else {
       console.log(`Good luck next time!!`);
     }

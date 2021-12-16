@@ -1,4 +1,4 @@
-console.log("%c************** DELIVERABLE 04 *********************", 'color: #8a136a');
+console.log("%c************** DELIVERABLE 04 *********************", 'color: green');
 
 interface Book {
   title: string;
@@ -19,5 +19,3 @@ function isBookRead( books: Array<Book>, titleToSearch: string): boolean {
 console.log(isBookRead(books, "Devastación")); // true
 console.log(isBookRead(books, "Canción de hielo y fuego")); // false
 console.log(isBookRead(books, "Los Pilares de la Tierra")); // false
-
-console.log('%cHello', 'color: green');

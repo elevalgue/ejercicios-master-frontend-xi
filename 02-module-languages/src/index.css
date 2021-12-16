@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,8 +18,8 @@ html, body {
   box-sizing: border-box;
   padding: 2rem;
   color: white;
-  background: linear-gradient(-25deg, #136a8a, #4ec1b7);
-  font-family: "Open Sans";
+  background: linear-gradient(-25deg, blue, #4ec1b7);
+  font-family: 'Open Sans';
 }
 
 .title {
