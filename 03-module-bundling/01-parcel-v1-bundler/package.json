@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rimraf dist && parcel ./src/index.html",
+    "build:prod": "rimraf dist && parcel build ./src/index.html",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
     "start:dev": "rimraf dist && parcel ./src/index.html --open",
