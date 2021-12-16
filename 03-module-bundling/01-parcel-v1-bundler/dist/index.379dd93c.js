@@ -459,11 +459,86 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"hD4hw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _mystylesScss = require("./mystyles.scss");
+var _quokkaJpg = require("./content/quokka.jpg");
+var _quokkaJpgDefault = parcelHelpers.interopDefault(_quokkaJpg);
+// import starCatcher from "./content/star-catcher.jpg";
 const userName = "Maricarmen";
 const message = `Hello ${userName}`;
 console.log(message);
+const img = document.querySelector("img");
+img.src = _quokkaJpgDefault.default;
+document.getElementById('imgContainer').appendChild(img);
 
-},{"./mystyles.scss":"gwNhu"}],"gwNhu":[function() {},{}]},["lBB98","hD4hw"], "hD4hw", "parcelRequire5bcb")
+},{"./mystyles.scss":"gwNhu","./content/quokka.jpg":"k8dxc","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"gwNhu":[function() {},{}],"k8dxc":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('hjDlF') + "quokka.c749c925.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"chiK4"}],"chiK4":[function(require,module,exports) {
+"use strict";
+var bundleURL = {
+};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"ciiiV":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["lBB98","hD4hw"], "hD4hw", "parcelRequire5bcb")
 
 //# sourceMappingURL=index.379dd93c.js.map
