@@ -10,6 +10,7 @@ class SlothMachine {
   play() {
     this.coins++;
     let message: string;
+    
     const randombool1: boolean = Math.random() < 0.5; 
     const randombool2: boolean = Math.random() < 0.5; 
     const randombool3: boolean = Math.random() < 0.5; 
