@@ -7,17 +7,15 @@ class SlothMachine {
     this.coins = 0; 
   }
   
-  randomBoolean(): boolean {
-    return Math.random() < 0.5; 
-  }
-
   play() {
     this.coins++;
     let message: string;
-    const game: boolean[] = [this.randomBoolean(), this.randomBoolean(), this.randomBoolean()]; 
-    if (game) {
+    const randombool1: boolean = Math.random() < 0.5; 
+    const randombool2: boolean = Math.random() < 0.5; 
+    const randombool3: boolean = Math.random() < 0.5; 
+  
+    if (randombool1 && randombool2 && randombool3) {
       message = `Congratulations!!!. You won ${this.coins} coins coins!!`; 
-      console.log(`Congratulations!!!. You won ${this.coins} coins coins!!`);
       this.coins = 0;
     } else {
       message = `Good luck next time!!`; 
