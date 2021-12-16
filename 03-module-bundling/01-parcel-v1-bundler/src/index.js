@@ -1,3 +1,5 @@
+import "./mystyles.css"; 
+
 const userName = "Maricarmen";
 const message = `Hello ${userName}`;
 

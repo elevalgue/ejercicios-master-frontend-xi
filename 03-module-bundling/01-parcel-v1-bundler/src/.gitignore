@@ -7,11 +7,11 @@
 ._*
 
 # Dependency directories
-./node_modules
+node_modules
 
 # Webpack related files
 dist
-.parcel-cache
+.cache
 package-lock.json
 
 # vscode

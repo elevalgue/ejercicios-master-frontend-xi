@@ -1,1 +1,0 @@
-{"mappings":"AAAA,KAAK,CAAC,QAAQ,GAAG,CAAY;AAC7B,KAAK,CAAC,OAAO,IAAI,MAAM,EAAE,QAAQ;AAEjC,OAAO,CAAC,GAAG,CAAC,OAAO","sources":["src/index.js"],"sourcesContent":["const userName = \"Maricarmen\";\nconst message = `Hello ${userName}`;\n\nconsole.log(message);"],"names":[],"version":3,"file":"index.017db2f2.js.map","sourceRoot":"/__parcel_source_root/"}
