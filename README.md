@@ -15,12 +15,9 @@
     <title>Layout</title>
   </head>
   <body>
-    <h2>Paleta de colores dinámica</h2>
-    <div class="container container-1">
       <div class="box darken-1">
         <span class="color-box-text">Darken 1</span>
       </div>
-    </div>
   </body>
 </html>
 ```
