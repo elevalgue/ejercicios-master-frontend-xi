@@ -2,7 +2,7 @@
 
 ## Content
 
-- __Module 01__: Layout
+#### Module 01: Layout
 - __Module 02__: Lenguage
 - __Module 03__: Bundling
 - __Module 04__: Frameworks
