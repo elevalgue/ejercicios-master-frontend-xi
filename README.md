@@ -25,11 +25,11 @@
 #### Module 02: Lenguage ⚙️
 
 ```javascript
-function values({...eso2o}) {
-  return Object.values(eso2o)
+function clone(obj) {
+  return { ...obj };
 }
 
-console.log(values({ David: 8.25, Maria: 9.5, Jose: 6.75, Juan: 5.5, Blanca: 7.75, Carmen: 8, }));
+console.log(clone(original));
 ```
 
 #### Module 03: Bundling 🍱
