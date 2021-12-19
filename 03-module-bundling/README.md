@@ -3,4 +3,4 @@
 **Content:**
 
 - Webpack
-- Parcel V-01
+- Parcel v-01
