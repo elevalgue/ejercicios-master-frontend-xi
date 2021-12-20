@@ -10,10 +10,11 @@ const arrayN = ["jan", "feb", "mar", "apr", "may"];
 
 console.log('%c/*------ 1. Concat ------*/', 'color: blue'); 
 const concat = (a, b) => [...a, ...b];
-
 console.log(concat(weekdays, numbers));
 
-const concatMulti = (array1, array2, array3, arrayN) => [...array1, ...array2, ...array3, ...arrayN];
+const concatMulti = (...arrays) => {
+  return [].concat(...arrays); 
+}
 
 console.log(concatMulti(weekdays, numbers, boolean, arrayN));
 console.log("%c/*---------------------*/", "color: blue");
