@@ -28,7 +28,6 @@ function initializeDices() {
       }
     }
   }
-
   return renderDices; 
 }
 

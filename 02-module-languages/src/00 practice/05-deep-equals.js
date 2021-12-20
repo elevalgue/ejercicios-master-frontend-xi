@@ -12,6 +12,7 @@ var user = {
   address: { city: "Málaga", code: 29620 },
   friends: ["Juan"],
 };
+
 var clonedUser = {
   name: "María",
   age: 30,

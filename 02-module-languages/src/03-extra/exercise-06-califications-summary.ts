@@ -18,3 +18,5 @@ console.log(summarizeClassRoom(students));
 //   { name: 'Jorge', highestCalification: 9.07, averageCalifications: '5.38' },
 //   { name: 'Mónica', highestCalification: 9.72, averageCalifications: '4.42' }
 // ]
+
+console.log('hellow world');

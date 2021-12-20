@@ -6,12 +6,10 @@ function biggestWord(phrase) {
   let index = splitWords.reduce((acc, curr, i) => {
     if (curr.length > splitWords[acc].length) {
       return i
-      
     } else {
       return acc;
     }
   }, 0)
-
   return splitWords[index];
 }
 

@@ -15,17 +15,17 @@ console.log(head(weekdays));
 console.log(head2(weekdays));
 console.log("%c/*---------------------*/", "color: blue");
 
-
 console.log('%c/*------ 2. Tail ------*/', "color: blue")
 const tail = (array) => {
   const [ , ...rest] = array;
   return rest; 
 }
 
-const tail2 = ([, ...rest]) => rest;
-
 console.log(tail(weekdays));
+
+const tail2 = ([, ...rest]) => rest;
 console.log(tail2(weekdays));
+
 console.log("%c/*---------------------*/", "color: blue");
 
 console.log('%c/*------ 3. Init ------*/', "color: blue")
