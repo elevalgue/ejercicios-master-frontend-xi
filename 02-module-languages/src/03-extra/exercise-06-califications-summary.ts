@@ -11,6 +11,12 @@ interface Student {
   califications: number[];
 };
 
+interface StudentSummary {
+  name: string;
+  califications: number[];
+  average: number
+}
+
 function listUncurrified(students: string, califications: [], highest: number) {
   const { name, califications } = students;
   console.log(name, 'hey');
@@ -21,7 +27,6 @@ function listUncurrified(students: string, califications: [], highest: number) {
 // const summarizeClassRoom = studentList => {
 // };
 
-console.log(listUncurrified(students));
 // console.log(summarizeClassRoom(students));
 // [
 //   { name: 'Juan', highestCalification: 9.71, averageCalifications: '5.37' },
