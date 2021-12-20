@@ -6,6 +6,11 @@ const students = [
   { name: "Mónica", califications: [9.72, 6.07, 1.11, 4.72, 0.04, 1.56, 0.66, 3.87, 6.97, 9.48] },
 ];
 
+interface Student {
+  name: string;
+  califications: number[];
+};
+
 function listUncurrified(students: string, califications: [], highest: number) {
   const { name, califications } = students;
   console.log(name, 'hey');
