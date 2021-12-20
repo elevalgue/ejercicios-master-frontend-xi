@@ -6,11 +6,18 @@ const students = [
   { name: "Mónica", califications: [9.72, 6.07, 1.11, 4.72, 0.04, 1.56, 0.66, 3.87, 6.97, 9.48] },
 ];
 
-const summarizeClassRoom = studentList => {
-  // Implementation here
-};
+function listUncurrified(students: string, califications: [], highest: number) {
+  const { name, califications } = students;
+  console.log(name, 'hey');
+  console.log(califications, 'ho');
+  
+  
+}
+// const summarizeClassRoom = studentList => {
+// };
 
-console.log(summarizeClassRoom(students));
+console.log(listUncurrified(students));
+// console.log(summarizeClassRoom(students));
 // [
 //   { name: 'Juan', highestCalification: 9.71, averageCalifications: '5.37' },
 //   { name: 'Álvaro', highestCalification: 8.3, averageCalifications: '5.58' },
