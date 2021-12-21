@@ -47,6 +47,8 @@ console.log(clone(original));
 ```
 
 #### Module 04: Frameworks
+#### - 01 React
+#### - 02 Angular
 
 ##
 
