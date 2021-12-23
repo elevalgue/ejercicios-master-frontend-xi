@@ -2,4 +2,21 @@
   margin: auto;
   display: flex;
   flex-direction: row;
+  display: inline-block;
+}
+
+.header__title {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }

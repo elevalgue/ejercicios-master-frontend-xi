@@ -6,7 +6,7 @@ export const Header: React.FC = ()  => {
 
   return (
     <header className={classes.header}>
-        <h1>
+        <h1 className={classes.header__title}>
           Hello World! 👋
         </h1>  
     </header>
