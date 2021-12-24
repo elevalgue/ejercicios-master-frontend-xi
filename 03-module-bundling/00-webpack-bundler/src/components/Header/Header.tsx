@@ -20,7 +20,8 @@ export const Header: React.FC = (props)  => {
     <header className={classes.header}>
         <h1 className={classes.header__title}>
         Hello, 
-        <span className={classes.skewed}>   {teachersName[teachers]}!</span>
+        <span>   {teachersName[teachers]}!</span>
+        {/* <span className={classes.skewed}>   {teachersName[teachers]}!</span> */}
         </h1>  
     </header>
   );
