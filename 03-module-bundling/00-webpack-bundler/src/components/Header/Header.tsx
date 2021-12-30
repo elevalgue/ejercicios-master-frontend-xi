@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import classes from "../../styles/Header.scss"
-const teachersName = ["Antonio", "Victor", "Braulio"]
+const teachersName = ["World", "Antonio", "Victor", "Braulio"]
 
 // const helloTeachers = (props) => {
   
@@ -21,7 +21,7 @@ export const Header: React.FC = (props)  => {
         <h1 className={classes.header__title}>
         Hello, 
         <span>   {teachersName[teachers]}!</span>
-        {/* <span className={classes.skewed}>   {teachersName[teachers]}!</span> */}
+        <span className={classes.skewed}></span>
         </h1>  
     </header>
   );

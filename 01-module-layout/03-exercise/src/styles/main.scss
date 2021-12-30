@@ -2,13 +2,13 @@
 @import 'variables.scss';
 @import 'mixin.scss';
 
-h2 {
-  text-align: left;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  font-family: $font-primary;
-  font-size: 18px;
-}
+// h2 {
+//   text-align: left;
+//   margin-top: 1rem;
+//   margin-left: 1rem;
+//   font-family: $font-primary;
+//   font-size: 18px;
+// }
 
 ul,
 li {
@@ -17,24 +17,26 @@ li {
   margin: 0;
 }
 
-nav .menu {
-  background: $color-primary;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: $font-primary;
-
-  @include for-desktop-up {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  background-color: $color-primary;
 
   &-item {
     text-align: center;
     color: $font-color-primary;
-    cursor: pointer;
     padding: 1rem;
-  }
 
-  &-item:hover {
-    background: $color-secondary;
+    &:hover {
+      background: $color-secondary;
+    }
+  }
+}
+
+.menu {
+  @media screen and (min-width: 385px) {
+    flex-direction: row;
   }
 }
