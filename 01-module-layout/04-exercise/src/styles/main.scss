@@ -38,11 +38,16 @@ body {
   &__content {
     border: 1px solid blue;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
   }
 
   &__date {
     border: 1px solid blue;
-    justify-self: end;
+    align-self: flex-end;
 
     span:nth-child(2) {
       color: $color-main;
@@ -54,7 +59,8 @@ body {
     background-color: $color-main;
     border-radius: 3px;
     color: white;
-    justify-self: center;
+    align-self: stretch;
+    text-align: center;
 
     &:hover {
       cursor: pointer;
