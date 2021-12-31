@@ -20,17 +20,21 @@ body {
   // margin: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 2fr 0.5fr;
+  // grid-template-rows: 2fr 2fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  border: 1px solid red;
 }
 
 .card {
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: rgb(231, 231, 231);
+  // background-color: rgb(231, 231, 231);
+  background-color: white;
   width: 250px;
+  // max-height: 600px;
+
   // display: grid;
   // grid-template-columns: 1fr;
   // grid-template-rows: 2fr 2fr 0.5fr;
@@ -54,9 +58,10 @@ body {
 
   &__content {
     border: 1px solid blue;
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: center;
+    background-color: white;
+    // grid-column: 1;
+    // grid-row: 2;
+    // justify-self: center;
   }
 
   &__date {
@@ -70,10 +75,10 @@ body {
     }
   }
 
-  &__button {
+  &__btn {
     border: 1px solid blue;
-    grid-column: 1;
-    grid-row: 4;
+    // grid-column: 1;
+    // grid-row: 4;
     background-color: $color-main;
     border-radius: 3px;
     color: white;
