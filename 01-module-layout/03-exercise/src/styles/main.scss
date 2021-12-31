@@ -16,7 +16,8 @@ li {
 .menu ul {
   flex-direction: column;
   background-color: $color-primary;
-  color: black;
+  color: $font-color;
+
   text-align: center;
 
   @media screen and (min-width: 1200px) {
@@ -32,6 +33,6 @@ li {
 
   &:hover {
     background-color: $color-secondary;
-    color: white;
+    color: $font-color;
   }
 }
