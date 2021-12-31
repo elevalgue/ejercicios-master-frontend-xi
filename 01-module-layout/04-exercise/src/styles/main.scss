@@ -3,6 +3,8 @@
 @import 'mixin.scss';
 
 body {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: $font-primary;
 }
@@ -14,34 +16,36 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 100vh;
-  // width: 100%;
-  border: 1px solid red;
+  width: 50%;
   margin: 1rem;
+  border: 1px solid red;
   //   background-color: rgb(231, 231, 231);
 }
 
 .card {
-  border: 1px solid rgb(0, 255, 0);
-  width: 250px;
+  // width: 250px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 2fr 0.5fr;
   grid-gap: 1rem;
 
-  &-image {
-    border: 1px solid blue;
+  &__image {
     grid-column: 1;
     grid-row: 1;
+    background-image: url(../img/night-campfire.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid green;
   }
 
-  &-content {
+  &__content {
     border: 1px solid blue;
     grid-column: 1;
     grid-row: 2;
     justify-self: center;
   }
 
-  &-date {
+  &__date {
     border: 1px solid blue;
     grid-column: 1;
     grid-row: 3;
@@ -52,7 +56,7 @@ body {
     }
   }
 
-  &-button {
+  &__button {
     border: 1px solid blue;
     grid-column: 1;
     grid-row: 4;
