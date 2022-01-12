@@ -17,4 +17,29 @@ body {
       'main'
       'footer';
   }
+
+  header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+    background-color: white;
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .page-title {
+      background-color: yellowgreen;
+      color: white;
+      padding: 20px;
+      font-family: 'Bangers', cursive;
+      letter-spacing: 2px;
+      font-size: 2;
+    }
+  }
 }
