@@ -1,0 +1,20 @@
+body {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header header header'
+    'navbar main main main'
+    'footer footer footer footer';
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'header'
+      'navbar'
+      'main'
+      'footer';
+  }
+}
