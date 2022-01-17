@@ -19,6 +19,7 @@
 - Footer:
   - Texto de la compañía, al final de la página (aunque el contenido no ocupe todo el alto)
 
+###
 **Consideraciones:**
 
 - No perder en ninguna resolución la barra de navegación al hacer scroll
