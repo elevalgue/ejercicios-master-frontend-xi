@@ -72,28 +72,52 @@ body {
           display: none;
         }
       }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          // width: 100%;
+          list-style-type: none;
+          background-color: #f8fbe2;
+          color: #393e07;
+          padding: 5px 10px;
+          border-bottom: 1px solid #393e07;
+          cursor: pointer;
+
+          @media screen and (max-width: 768px) {
+            padding: 5px 10px;
+          }
+        }
+
+        li:hover {
+          color: red;
+        }
+      }
     }
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
-  }
+  main {
+    grid-area: main;
 
-  li {
-    list-style-type: none;
-    background-color: #f8fbe2;
-    color: #393e07;
-    padding: 5px 10px;
-    border-bottom: 1px solid #393e07;
-    cursor: pointer;
+    .list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
-    @media screen and (max-width: 768px) {
-      padding: 5px 10px;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 150px;
+      }
     }
-  }
-
-  li:hover {
-    color: red;
   }
 }
