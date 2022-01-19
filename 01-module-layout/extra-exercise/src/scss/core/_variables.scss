@@ -1,14 +1,14 @@
 // Colors
-$color-primary: rgb(217, 255, 0);
+// $color-primary: rgb(217, 255, 0);
 
-$color1: #cf6765;
-$color2: #30415d;
-$color3: #041424;
-$color4: #8facbb;
+$color-primary: #cf6765;
+$color-secondary: #30415d;
+$color-tertiary: #041424;
+$color-quaternary: #8facbb;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-$font-primary: 'Montserrat', sans-serif;
+$font-primary: 'Roboto', sans-serif;
+$font-logo: 'Bangers', cursive;
