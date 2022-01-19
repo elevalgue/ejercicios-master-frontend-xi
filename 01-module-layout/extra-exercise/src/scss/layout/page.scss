@@ -119,7 +119,6 @@ body {
   }
 
   main {
-    // width: 100%;
     grid-area: main;
     background-color: $color-secondary;
     padding: 1rem;
@@ -143,7 +142,6 @@ body {
         align-items: center;
         gap: 20px;
         width: 250px;
-        // min-width: 250px;
         height: 150px;
         // padding: 1rem;
         border: 2px solid $color-primary;
@@ -190,6 +188,5 @@ body {
 footer {
   grid-area: footer;
   background-color: $color-tertiary;
-  // padding: 15px;
   padding: 2rem;
 }
