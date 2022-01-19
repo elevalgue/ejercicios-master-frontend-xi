@@ -51,10 +51,6 @@ body {
     }
   }
 
-  // .page-container {
-  //   display: flex;
-  // align-items: center;
-
   nav {
     grid-area: navbar;
     width: 100%;
@@ -155,7 +151,6 @@ body {
   }
 }
 
-// }
 footer {
   grid-area: footer;
   background-color: #f8fbe2;
