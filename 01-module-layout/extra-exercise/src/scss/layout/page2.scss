@@ -42,13 +42,17 @@ body {
     }
   }
 
-  nav {
+  .page-container {
     grid-area: navbar;
     width: 100%;
     height: 100%;
     // display: flex;
     // flex-direction: column;
     background-color: #393e07;
+    position: sticky;
+    top: 0;
+
+    // nav {
 
     .menu-container {
       color: white;
@@ -72,58 +76,66 @@ body {
           display: none;
         }
       }
+    }
 
-      ul {
-        margin: 0;
-        padding: 0;
+    ul {
+      margin: 0;
+      padding: 0;
 
-        li {
-          // width: 100%;
-          list-style-type: none;
-          background-color: #f8fbe2;
-          color: #393e07;
+      li {
+        // width: 100%;
+        list-style-type: none;
+        background-color: #f8fbe2;
+        color: #393e07;
+        padding: 5px 10px;
+        border-bottom: 1px solid #393e07;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px) {
           padding: 5px 10px;
-          border-bottom: 1px solid #393e07;
-          cursor: pointer;
+        }
+      }
 
-          @media screen and (max-width: 768px) {
-            padding: 5px 10px;
-          }
+      li:hover {
+        color: cadetblue;
+      }
+    }
+    // }
+
+    main {
+      grid-area: main;
+
+      .list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 25px;
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
         }
 
-        li:hover {
-          color: cadetblue;
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+          width: 200px;
+          height: 150px;
+          border: 1px solid red;
+          border-radius: 10px;
         }
       }
     }
   }
 
-  main {
-    grid-area: main;
-
-    .list {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 20px;
-      gap: 25px;
-
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
-      }
-
-      .item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        width: 200px;
-        height: 150px;
-        border: 1px solid red;
-        // border-radius: 20px;
-      }
-    }
+  footer {
+    grid-area: footer;
+    background-color: #f8fbe2;
+    padding: 10px;
+    margin-top: 10px;
   }
 }
