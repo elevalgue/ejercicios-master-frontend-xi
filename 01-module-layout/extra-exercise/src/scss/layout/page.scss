@@ -13,7 +13,7 @@ body {
     'navbar main main main'
     'footer footer footer footer';
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $tablet) {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
@@ -34,6 +34,10 @@ body {
       justify-content: space-between;
       align-items: center;
       padding: 15px;
+
+      // input {
+
+      // }
     }
 
     .page-title {
@@ -43,12 +47,12 @@ body {
       font-family: $font-logo;
       letter-spacing: 2px;
       font-size: 26px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tablet) {
         display: none;
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet) {
       margin-bottom: 0px;
 
       .toolbar {
@@ -70,7 +74,7 @@ body {
       position: -webkit-sticky;
       position: sticky;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tablet) {
         position: fixed;
         height: 100vh;
         top: 0;
@@ -83,7 +87,7 @@ body {
         text-align: center;
         padding: 5px 10px;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $tablet) {
           display: none;
         }
       }
@@ -107,16 +111,14 @@ body {
           font-weight: bold;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $tablet) {
           display: flex;
           flex-direction: row;
           gap: 1rem;
           width: 100vw;
-          // position: sticky;
           text-align: center;
 
           li {
-            // display: flex;
             border-bottom: none;
             width: 100%;
           }
@@ -142,7 +144,7 @@ body {
       padding: 20px;
       gap: 18px;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tablet) {
         flex-direction: column;
       }
 
@@ -160,7 +162,7 @@ body {
         background-color: $color-light;
         cursor: pointer;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $tablet) {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -172,7 +174,7 @@ body {
           height: 100px;
           border-radius: 50%;
 
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: $tablet) {
             margin-left: 1rem;
           }
         }
@@ -182,7 +184,7 @@ body {
           padding: 1px;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $tablet) {
           width: 100%;
           flex-direction: row;
           flex-wrap: nowrap;
@@ -205,7 +207,7 @@ footer {
   background-color: $color-tertiary;
   padding: 2rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $tablet) {
     text-align: center;
   }
 }
