@@ -107,6 +107,12 @@ body {
           font-weight: bold;
         }
 
+        li:active {
+          color: $color-light;
+          background-color: $color-secondary;
+          font-weight: bold;
+        }
+
         @media screen and (max-width: $tablet) {
           display: flex;
           flex-direction: row;
