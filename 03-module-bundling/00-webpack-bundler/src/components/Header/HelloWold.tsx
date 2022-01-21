@@ -1,12 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import classes from "../../styles/header.scss"
 import classes from "../../styles/HelloWorld.scss"; 
 const teachersName = ["World", "Antonio", "Victor", "Braulio", "Javi", "Santi"]
-
-// const helloTeachers = (props) => {
-  
-// }
 
 export const HelloWorld: React.FC = (props)  => {
   const [teachers, setTeachears] = useState(0);
