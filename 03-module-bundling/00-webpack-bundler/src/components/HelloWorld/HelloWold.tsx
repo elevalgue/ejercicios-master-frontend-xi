@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import classes from "../../styles/HelloWorld.scss"; 
+import classes from "../../styles/HelloWorld.scss";
+
 const teachersName = ["World", "Antonio", "Victor", "Braulio", "Javi", "Santi"]
 
 export const HelloWorld: React.FC = (props)  => {
@@ -16,7 +17,7 @@ export const HelloWorld: React.FC = (props)  => {
     <header className={classes.header}>
         <h1 className={classes.header__title}>
         Hello, 
-        <span>{teachersName[teachers]}!</span>
+        <span> {teachersName[teachers]}!</span>
         </h1>  
     </header>
   );

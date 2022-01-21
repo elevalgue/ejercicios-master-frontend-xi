@@ -9,5 +9,4 @@ export const App: React.FC = () => {
         <img className={classes.container__image} src={starCatcher}/>
       </div>
   );
-  
 };
