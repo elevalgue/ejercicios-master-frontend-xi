@@ -1,16 +1,14 @@
 $background: #efefef;
 
-.imgContainer {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.container__image {
   width: 50%;
   height: 50%;
-}
-
-.image {
-  width: 50%;
-  // height: 50%;
-  // border-radius: 50%;
+  border-radius: 50%;
 }
