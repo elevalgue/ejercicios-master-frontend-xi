@@ -17,14 +17,16 @@ h2 {
 }
 
 .box {
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   border-radius: 15px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2px;
+  font-size: medium;
+  padding: 1rem;
 }
 
 .container-1 {
