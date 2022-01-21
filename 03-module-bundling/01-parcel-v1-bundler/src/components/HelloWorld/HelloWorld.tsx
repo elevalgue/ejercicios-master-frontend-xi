@@ -2,8 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 const classes = require("../../styles/HelloWorld.scss");
 
-
-
 const teachersName = ["World", "Antonio", "Victor", "Braulio", "Javi", "Santi"]
 
 export const HelloWorld: React.FC = (props)  => {
