@@ -1,0 +1,18 @@
+.header {
+  // margin: auto;
+  // display: flex;
+  // flex-direction: row;
+  // display: inline-block;
+  // text-align: center;
+  // margin: auto;
+  text-align: center;
+}
+
+.header__title {
+  color: black;
+  font-family: 'Space Mono', monospace;
+}
+
+.header__title > span {
+  color: #f37034;
+}
