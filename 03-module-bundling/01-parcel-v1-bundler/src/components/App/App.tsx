@@ -1,6 +1,6 @@
 import React from "react";
-const starCatcher = require("../../content/star.jpg");
-const classes = require("../../styles/App.scss");
+import starCatcher from "../../content/star-catcher.jpg"
+import classes from "../../styles/App.scss"
 
 export const App: React.FC = () => {
 
@@ -10,5 +10,3 @@ export const App: React.FC = () => {
       </div>
   );
 };
-
-
