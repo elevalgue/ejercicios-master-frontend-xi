@@ -1,9 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import classes from "../../styles/HelloWorld.scss";
-// import classes = require ("../../styles/HelloWorld.scss"); 
-// const classes = require("./mystyles.scss");
-const classes = require("../../styles/HelloWorld.scss"); 
+const classes = require("../../styles/HelloWorld.scss");
+
 
 
 const teachersName = ["World", "Antonio", "Victor", "Braulio", "Javi", "Santi"]
