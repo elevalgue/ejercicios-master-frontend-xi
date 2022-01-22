@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100%;
+  font-family: $font-primary;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header header header'
+    'navbar main main main'
+    'footer footer footer footer';
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'header'
+      'navbar'
+      'main'
+      'footer';
+  }
+}
