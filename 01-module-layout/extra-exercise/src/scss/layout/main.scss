@@ -8,10 +8,10 @@ main {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
-    // padding: 1.25rem;
-    gap: 18px;
-    // gap: 1.125rem;
+    // padding: 20px;
+    padding: 1.25rem;
+    // gap: 18px;
+    gap: 1.125rem;
 
     @media screen and (max-width: $tablet) {
       flex-direction: column;
@@ -22,14 +22,14 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 20px;
-      // gap: 1.25rem;
+      // gap: 20px;
+      gap: 1.25rem;
       width: 250px;
       height: 150px;
       padding: 1rem;
       border: 2px solid $color-primary;
-      border-radius: 10px;
-      // border-radius: 0.625rem;
+      // border-radius: 10px;
+      border-radius: 0.625rem;
       background-color: $color-light;
       cursor: pointer;
 
