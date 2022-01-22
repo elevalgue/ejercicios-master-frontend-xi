@@ -1,0 +1,9 @@
+footer {
+  grid-area: footer;
+  background-color: $color-tertiary;
+  padding: 2rem;
+
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+}
