@@ -48,6 +48,19 @@ console.log(clone(original));
 
 #### Module 04: Frameworks
 #### - 01 React
+```javascript
+export const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/list" element={<ListPage />} />
+        <Route path="/detail/:id" element={<DetailPage />} />
+      </Routes>
+    </Router>
+  );
+};
+```
 #### - 02 Angular
 
 ##
