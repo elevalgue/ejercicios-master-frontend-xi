@@ -22,7 +22,6 @@ nav {
       text-transform: uppercase;
       letter-spacing: 2px;
       text-align: center;
-      // padding: 5px 10px;
       padding: 0.313rem 0.625rem;
 
       @media screen and (max-width: $tablet) {
@@ -38,7 +37,6 @@ nav {
         list-style-type: none;
         background-color: $color-tertiary;
         color: $color-dark;
-        // padding: 10px;
         padding: 0.625rem;
         border-bottom: 1px solid $color-dark;
         cursor: pointer;
