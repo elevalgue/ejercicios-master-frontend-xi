@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Dependency directories
+node_modules
+
+# Webpack related files
+dist
+.cache
+package-lock.json
+
+# vscode
+.vscode

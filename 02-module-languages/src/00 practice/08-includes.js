@@ -7,6 +7,7 @@ function includes(array, value) {
       return true;
     } else {
       return false; 
+      // return item === value
     }
   }
 }

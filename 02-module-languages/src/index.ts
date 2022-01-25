@@ -7,3 +7,5 @@ import "./01 deliverables/exercise-05.js";
 
 // import "./03-extra/exercise-06-califications-summary.js";
 
+import "./00 practice/08-includes.js"; 
+
