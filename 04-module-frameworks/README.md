@@ -4,6 +4,6 @@
 
 - React
 - Angular
-- Vue
+- Vuejs
 - NextJs
 - Svelte
