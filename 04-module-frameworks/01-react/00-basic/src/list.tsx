@@ -1,14 +1,15 @@
 import React from "react";
+// import { MemberEntityModel } from './MemberEntityModel'; 
 import { Link, generatePath } from "react-router-dom";
 
-interface MemberEntity {
-  id: string;
-  login: string;
-  avatar_url: string;
-}
+// interface MemberEntity {
+//   id: string;
+//   login: string;
+//   avatar_url: string;
+// }
 
 export const ListPage: React.FC = () => {
-  const [members, setMembers] = React.useState<MemberEntity[]>([]);
+  const [members, setMembers] = React.useState<MemberEntityModel[]>([]);
 
   React.useEffect(() => {
     fetch(`https://api.github.com/orgs/lemoncode/members`)
