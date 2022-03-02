@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { LoginPage } from "./login";
-import { ListPage } from "./list";
+import { LoginPage } from "./pods/login/login";
+import { ListPage } from './pods/member-list/member-list.component';
 import { DetailPage } from "./detail";
 
 export const App = () => {

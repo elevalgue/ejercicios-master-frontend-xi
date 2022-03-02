@@ -12,4 +12,3 @@ export const DetailPage: React.FC = () => {
     </>
   );
 };
- 
