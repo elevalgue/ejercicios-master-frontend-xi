@@ -39,4 +39,4 @@ export const LoginPage: React.FC = () => {
       <button type="submit">login</button>
     </form>
   );
-};
+}
