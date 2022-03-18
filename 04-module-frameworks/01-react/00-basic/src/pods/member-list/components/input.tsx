@@ -7,11 +7,12 @@ import { ListPage } from "../member-list.component";
 // }
 
 
-export const inputSearch: React.FC = ()  => {
+export const InputSearch: React.FC = ()  => {
   // const organization = props; 
   const [input, setInput] = useState('');
   
-const handleChange = (ev) => {
+  const handleChange = (ev) => {
+    console.log(ev.target, 'hola');
     setInput(ev.target.value);
   };
 
@@ -26,7 +27,7 @@ const handleChange = (ev) => {
           onChange={handleChange }
         />
       </fieldset>
-      <button>Search</button>
+      {/* <button>Search</button> */}
   </form>
   </>
 }
