@@ -9,11 +9,11 @@ import { ListPage } from "../member-list.component";
 
 export const InputSearch: React.FC = ()  => {
   // const organization = props; 
-  const [input, setInput] = useState('');
+  const [filter, setFilter] = useState('');
   
   const handleChange = (ev) => {
     console.log(ev.target, 'hola');
-    setInput(ev.target.value);
+    setFilter(ev.target.value);
   };
 
   return <>
@@ -23,11 +23,10 @@ export const InputSearch: React.FC = ()  => {
         <input
           type="text"
           id=""
-          value={input}
+          value={filter}
           onChange={handleChange }
         />
       </fieldset>
-      {/* <button>Search</button> */}
   </form>
   </>
 }

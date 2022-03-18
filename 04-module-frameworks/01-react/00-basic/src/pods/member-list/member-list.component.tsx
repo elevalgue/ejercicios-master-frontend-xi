@@ -4,16 +4,17 @@ import { Link, generatePath } from "react-router-dom";
 import { InputSearch } from "./components/input";
 
 export const ListPage: React.FC = () => {
-  const [members, setMembers] = React.useState<Member[]>([]);
+  const [memberList, setMemberList] = React.useState<Member[]>([]);
 
   React.useEffect(() => {
     fetch(`https://api.github.com/orgs/lemoncode/members`)
       .then((response) => response.json())
-      .then((json) => setMembers(json));
+      .then((json) => setMemberList(json));
   }, []);
 
   return (
     <>
+      {/* <Button></Button> */}
     <InputSearch></InputSearch>
       <h2>Hello from List page</h2>
       <table className="table">
@@ -25,7 +26,7 @@ export const ListPage: React.FC = () => {
           </tr>
         </thead>
         <tbody>
-          {members.map((member) => (
+          {memberList.map((member) => (
             <tr>
               <td>
                 <img src={member.avatar_url} style={{ width: "5rem" }} />
