@@ -1,22 +1,38 @@
 import React from "react";
-import { Member } from './api/member-list.api-model';
+import { useState, useEffect } from "react";
 import { Link, generatePath } from "react-router-dom";
-import { InputSearch } from "./components/input";
+import { useDebounce } from 'use-debounce';
+import {getMembers} from './api/member-list.api'
+import { Member } from './api/member-list.api-model';
+// import { InputSearch } from "./components/input";
 
 export const ListPage: React.FC = () => {
   const [memberList, setMemberList] = React.useState<Member[]>([]);
+  const [filter, setFilter] = useState<string>('lemoncode');
+  const [debouncedFilter] = useDebounce(filter, 500);
 
   React.useEffect(() => {
-    fetch(`https://api.github.com/orgs/lemoncode/members`)
-      .then((response) => response.json())
-      .then((json) => setMemberList(json));
-  }, []);
+    getMembers(filter)
+  }, [debouncedFilter]);
 
   return (
     <>
-      {/* <Button></Button> */}
-    <InputSearch></InputSearch>
       <h2>Hello from List page</h2>
+
+      <form action="">
+        <fieldset>
+          <label htmlFor="">Search</label>
+        <input value={filter} onChange={(e) => setFilter(e.target.value)} />
+          {/* <input
+            type="text"
+            id=""
+            value={filter}
+            onChange={handleChange}
+          /> */}
+        </fieldset>
+      </form>
+
+
       <table className="table">
         <thead>
           <tr>
@@ -27,7 +43,8 @@ export const ListPage: React.FC = () => {
         </thead>
         <tbody>
           {memberList.map((member) => (
-            <tr>
+            // para limpiar la consola
+            <tr key={member.id}>
               <td>
                 <img src={member.avatar_url} style={{ width: "5rem" }} />
               </td>
